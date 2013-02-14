@@ -1,6 +1,6 @@
 function onClicked(tab) {
   var url = 'https://twitter.com/intent/tweet?'
-    + 'text= >> ' + encodeURIComponent(tab.title)
+    + 'text=' + encodeURIComponent(tab.title)
     + '&url=' + encodeURIComponent(tab.url);
   var w = 640;
   var h = 360;
