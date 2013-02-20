@@ -11,10 +11,10 @@ function onClicked(tab) {
 
     var param = {
       'url'    : url,
-      'left'   : x,
-      'top'    : y,
-      'width'  : w,
-      'height' : h,
+      'left'   : x | 0,
+      'top'    : y | 0,
+      'width'  : w | 0,
+      'height' : h | 0,
       'type'   : 'popup',
     };
     chrome.windows.create(param);
